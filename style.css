@@ -63,6 +63,14 @@ p{
     color: white;
     background-color: green;
 }
+.brand h1{
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+.brand h1 span{
+    color: crimson;
+}
 /* hero sectiom */
 #hero{
     background-image: url(./img/1.jpg);
@@ -369,6 +377,47 @@ p{
 
 /* end contact sectiom */
 
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    filter:grayscale(1);
+    transition: .3s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+#footer p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+/* end footer */
 
 /*key frames*/ 
 @keyframes text_reveal_box{
@@ -393,3 +442,51 @@ p{
     }
 }
 /*end key frames*/
+
+/* media query for tablet */
+@media only screen and(min-width:768px) {
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1 .section-title{
+        font-size: 6rem;
+    }
+
+    /* hero */
+    #hero h1{
+        font-size: 7rem;
+    }
+    /* end hero */
+
+    /* service */
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* end service */
+
+    /* projects */
+    #projects .projects-item{
+        flex-direction: row;
+    }
+    #projects .projects-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+
+    /* end projects */
+}
+/* end media query for tablet */
+
