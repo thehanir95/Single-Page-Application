@@ -741,7 +741,11 @@ p{
     }
 
 }
-
-
+ 
+@media screen and (max-width: 1024px) {
+    #services{
+        background: darkslategray;
+    }
+ }
 /*end media query for desktop*/
 
